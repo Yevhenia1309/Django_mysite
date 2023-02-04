@@ -25,11 +25,6 @@ class DishAllAdmin(admin.ModelAdmin):
     list_filter = ['category', 'is_special', 'is_visible']
     list_editable = ['position', 'is_visible', 'price']
 
-@admin.register(Special)
-class SpecialAdmin(admin.ModelAdmin):
-    list_display = ['title', 'position', 'is_visible', 'ingredients', 'description', 'photo']
-    list_editable = ['position', 'is_visible', 'price']
-
 @admin.register(Events)
 class EventsAdmin(admin.ModelAdmin):
     list_display = ['title', 'position', 'description', 'date', 'photo']
